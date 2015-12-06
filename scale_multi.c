@@ -14,7 +14,9 @@ void *func_thread(void *id) {
 }
 
 int main(int argc, char **argv) {
-	srand(time(NULL))
+	srand(time(NULL));
+	int r = rand() % 10;
+	printf("valor randomico: %d ", r);
 	pthread_t threads[MAX_THREADS];
 	int threads_id[MAX_THREADS];
 
