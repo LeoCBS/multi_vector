@@ -8,7 +8,6 @@
 
 void *func_thread(void *id) {
 	int my_id = *((int *) id);
-
 	printf("Thread %d criada.\n", my_id);
 	return 0;
 }
